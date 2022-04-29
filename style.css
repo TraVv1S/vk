@@ -58,7 +58,7 @@ a {
 }
 
 .header__logo {
-    width: 165px;
+    width: 176px;
     color: #000;
 }
 
@@ -74,6 +74,10 @@ a {
     background-repeat: no-repeat;
     background-position: left 10px center;
 
+}
+
+.header__search-bar:focus-visible {
+    outline: none;
 }
 
 .header__widget {
@@ -226,7 +230,7 @@ a {
     flex-wrap: nowrap;
     align-items: center;
     padding: 0 16px;
-    height: 30px;
+    height: 36px;
     color: #818c99;
     border-radius: 4px;
 }
@@ -264,7 +268,7 @@ a {
 }
 
 .account-info__row {
-    padding-top: 5px;
+    padding-top: 9px;
 }
 
 .account-info__title {
@@ -318,7 +322,7 @@ a {
 }
 
 .island__label-title {
-    /* float: left; */
+    color: #000;
 }
 
 .island__right-link {
@@ -339,11 +343,29 @@ a {
     display: inline-block;
     width: 123px;
     height: 123px;
-    background: url('img/photo-1.jpg') no-repeat center center;
-    background-size: cover;
     margin-left: 5px;
 }
 
 .account-photos__photo:first-child {
     margin-left: 0;
+}
+
+#photo-1 {
+    background: url('img/photo-1.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#photo-2 {
+    background: url('img/photo-2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#photo-3 {
+    background: url('img/photo-3.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#photo-4 {
+    background: url('img/photo-4.jpg') no-repeat center center;
+    background-size: cover;
 }

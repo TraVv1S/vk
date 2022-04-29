@@ -4,9 +4,24 @@
     box-sizing: border-box;
 }
 
+ul {
+    list-style-type: none;
+}
+
 body {
-    font-size:13px;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 1.4em;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: normal;
+    color: #818c99;
 }
 
 a {
@@ -24,14 +39,15 @@ a {
    z-index: 20;
 }
 
-.header__wrapper {
-    width: 960px;
+.wrapper {
+    width: 990px;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 10px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
 }
 
 .header__main {
@@ -102,7 +118,232 @@ a {
 /* start content styles */
 
 .content {
-    position: relative;
+    
     margin-top: 48px;
+    padding-top: 15px;
     background-color: #edeef0;
+}
+
+.sidebar {
+    width: 165px;
+}
+
+.main-content {
+    width: 795px;
+}
+
+.main-nav {
+    margin-bottom: 20px;
+}
+
+.main-nav__item {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0 6px;
+    height: 30px;
+    color: #000;
+    border-radius: 4px;
+}
+
+.main-nav__item:hover {
+    background-color: #aeb7c21f;
+}
+
+.main-nav__item-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    color: #5181b8;
+}
+
+.main-nav__divider {
+    margin: 8px 0 8px 30px;
+    border-top: 1px solid #dce1e6;
+}
+
+.main-nav__other {
+    font-size: 0.7rem;
+    padding: 0 6px;
+}
+
+.main-nav__other-item {
+    margin-right: 10px;
+    line-height: 1.5;
+    color: #00000080;
+}
+
+
+
+.column-s {
+    width: 230px;
+    height: 1000px;
+    
+}
+
+.column-m {
+    width: 550px;
+    height: 1000px;
+}
+
+.island {
+    width: 100%;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #e7e8ec;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.avatar__pic-edit {
+    margin-bottom: 10px;
+}
+
+.button-blue {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5ebf1;
+    margin: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.button-blue:hover {
+    background-color: #dae2ea;
+}
+
+.avatar__nav {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.avatar__item {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0 16px;
+    height: 30px;
+    color: #818c99;
+    border-radius: 4px;
+}
+
+.avatar__item:hover {
+    background-color: #aeb7c21f;
+}
+
+.avatar__item-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.profile-link__link {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0 6px;
+    height: 30px;
+    color: #5181b8;
+    border-radius: 4px;
+    margin-top: -6px;
+    margin-bottom: -6px;
+}
+
+.profile-link__item-icon {
+    width: 30px;
+}
+
+.account-info__divider {
+    margin: 15px 0;
+    border-top: 1px solid #dce1e6;
+}
+
+.account-info__row {
+    padding-top: 5px;
+}
+
+.account-info__title {
+    width: 165px;
+}
+
+.account-info__title {
+    float: left;
+}
+
+.account-info__more-link {
+    display: block;
+    width: 100%;
+    height: 30px;
+    
+    padding-left: 165px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.account-info__more-link:hover {
+    background-color: #f4f6f8;
+}
+
+.account-info__divider-full {
+    margin: 15px -15px 15px;
+    border-top: 1px solid #dce1e6;
+}
+
+.account-info__counter {
+    display: inline-block;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.account-info__count {
+    font-size: 1.5em;
+}
+
+.account-info__count-title {
+    color: #626d7a;
+}
+
+.account-info__counter {
+    display: inline-block;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.island__label-title {
+    /* float: left; */
+}
+
+.island__right-link {
+    float: right;
+    color: #818c99;
+}
+
+.island__label-count {
+    color: #818c99;
+    padding: 0 6px;
+}
+
+.account-photos__photos {
+    padding: 13px 0 0;
+}
+
+.account-photos__photo {
+    display: inline-block;
+    width: 123px;
+    height: 123px;
+    background: url('img/photo-1.jpg') no-repeat center center;
+    background-size: cover;
+    margin-left: 5px;
+}
+
+.account-photos__photo:first-child {
+    margin-left: 0;
 }
